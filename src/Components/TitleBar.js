@@ -4,7 +4,7 @@ const TitleBar = ({handleSelectChange, regions}) => {
     return (
         <div>
             <h1>Countries</h1>
-            <select onChange={handleSelectChange}>
+            <select className="select-bar"onChange={handleSelectChange}>
                 {regions.map(region => {
                     return <option key={region.name} value={region.url}>{region.name}</option>
                 })}

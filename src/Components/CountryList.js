@@ -7,9 +7,9 @@ const CountryList = ({countries, onCountryClicked}) => {
     })
 
     return (
-        <div>
+        <div className="div">
             <h1>Countries</h1>
-        <ul>
+        <ul className="list-item">
             {countryItems}
         </ul>
         </div>

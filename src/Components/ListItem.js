@@ -12,13 +12,12 @@ const ListItem = ({country, onCountryClicked, index}) => {
 
 
     return(
-    <>
-    <li value={index} onClick={handleClick}>Country: {country.name.common}</li>
-    <span>Population: {country.population}</span>
-    <br></br>
-    <span>Capital: {country.capital}</span>
-    
-    </>
+    <div className="list-div">
+    <li  className="li-item" value={index} onClick={handleClick}>Country: {country.name.common}</li>
+    <span className="li-span">Capital: {country.capital}</span>
+    <img className="img" src={country.flags.png}/>
+    <ul></ul>
+     </div>
 )}
 
 export default ListItem;

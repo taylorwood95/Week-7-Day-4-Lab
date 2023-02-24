@@ -16,7 +16,7 @@ function App() {
 
 
   return (
-    <div>
+    <div className="main=title">
       <CountryContainer regions={regions}/>
     </div>
   );
